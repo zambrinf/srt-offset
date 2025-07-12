@@ -19,13 +19,15 @@ git clone https://github.com/zambrinf/srt-offset.git
 cd srt-offset
 go build -o srt-offset main.go
 sudo mv srt-offset /usr/local/bin/
+sudo chmod +x /usr/local/bin/srt-offset
 ```
 
 ## Usage
 
-To use the tool, run the following command:
+To use the tool, run one of the following commands:
 
 ```bash
+srt-offset -i input.srt -offset <time>
 srt-offset -i input.srt -offset <time> -o output.srt
 ```
 
@@ -33,7 +35,7 @@ Where:
 
 - `-i` specifies the input SRT file.
 - `-offset` specifies the time to offset the subtitles (e.g., `-0.5` to make the subtitles appear 0.5 seconds earlier).
-- `-o` specifies the output SRT file.
+- `-o` specifies the output SRT file. If not provided, it will overwrite the input file.
 
 ## Example
 
