@@ -60,9 +60,7 @@ func main() {
 	}
 
 	if *outputPath == "" {
-		for _, line := range outputLines {
-			fmt.Println(line)
-		}
+		writeToFile(*inputPath, outputLines)
 	} else {
 		writeToFile(*outputPath, outputLines)
 	}
