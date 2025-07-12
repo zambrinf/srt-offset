@@ -1,0 +1,10 @@
+## Expected when running `go run main.go -i test_data/test.srt -offset -0.5 -o output.srt`
+
+1
+00:00:01,500 --> 00:00:02,000
+<i>Testing one, two, three</i>
+
+2
+00:00:03,500 --> 00:00:04,000
+<i>This is
+The end</i>
