@@ -9,6 +9,7 @@ This tool allows you to adjust the timing of subtitles in SRT files, which can b
 - Supports input and output file paths.
 - Can be used in scripts or manually from the command line.
 - Cross-platform compatibility (Windows, Linux, macOS).
+- Pure Golang - no third-party libraries, lowering the risk of dependency-based security issues.
 
 ## Installation
 
